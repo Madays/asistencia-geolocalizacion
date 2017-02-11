@@ -29,13 +29,13 @@ function showError(error) {
             break;
     }
 }
-*/
-var x = document.getElementById("demo");
+***************/
+/*var x = document.getElementById("demo");
 var arrPositions = [];
 function getLocation() {
     if (navigator.geolocation) {
         navigator.geolocation.watchPosition(showPosition);
-        arrPositions.push(navigator.geolocation.watchPosition(showPosition));
+        
     } else { 
         x.innerHTML = "Geolocation is not supported by this browser.";}
     }
@@ -43,4 +43,16 @@ function getLocation() {
 function showPosition(position) {
     x.innerHTML="Latitude: " + position.coords.latitude + 
     "<br>Longitude: " + position.coords.longitude;
-}
+    var latitude = position.coords.latitude;
+    var longitude = position.coords.longitude;               
+}*/
+
+var socket;
+	window.onload = function(){
+		socket = io.connect('http://services.geekadvice.pe:4000');
+		socket.on('connect', function () {
+        	socket.emit('identify', "Gerson");
+        	socket.emit('hola', "Maday");
+        });
+	};
+

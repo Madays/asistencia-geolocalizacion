@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Server Stalker</title>
+</head>
+<body>
+I see you!
+<script src="/socket.io/socket.io.js"></script>
+<script>
+	var socket;
+	window.onload = function(){
+		socket = io.connect();
+		socket.on('connect', function () {
+        	socket.emit('identify', "Gerson3");
+        });
+	};
+</script>
+</body>
+</html>

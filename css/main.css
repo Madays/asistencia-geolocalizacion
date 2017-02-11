@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Arimo', sans-serif;    
+}
+/*------------------HEADER*/
+/*-------HEADER------*/
+header{
+    background: #F8F8F8;
+}
+header a,header a:hover{
+    text-decoration: none;
+    color: #A8A0A5;
+}
+header h1{
+    display: inline-block;
+    margin: 7px;
+}
+nav li a{
+	display: block;
+	padding: 15px 15px;
+	transition: all 0.2s;
+	border-radius: 6px;
+    color: #A8A0A5; 
+}
+nav li a:hover, nav li a:focus{
+	text-decoration: none;
+	outline: none;
+	background: rgba(79, 197, 197,.6);
+    color: #A8A0A5;
+}
+#main-navigation
+{
+	z-index: 10;
+	position: absolute;
+	right: 10px;
+	margin: 10px 0 0 0;
+}
+#main-navigation ul{
+    list-style: none; 
+    background: rgba(255,255,255,.6);
+}
+header button{
+    display: inline-block;
+    background: rgba(79, 197, 197,.6);
+    color: #fff;
+    text-align: center;    
+    border: solid 1px #fff;
+    margin-top: 10px; 
+}
+.desktop-menu{
+    margin-top: 10px;
+}
+/*-----END--header------*/
+/*------END--PARTE MENU*/
+/*----------------END--HEADER*/
+/*------------------banner*/
+section.banner{
+    background-image: url(../img/home.jpg); 
+    background-size: cover;
+}
+.contenedor-banner{
+    padding: 20px 20px 60px 20px;
+}
+.frase p:nth-child(1){font-size: 30px; color: #fff;}
+section.banner button{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+/*----------------END--BANNER*/
+/*------------------DOCUMENTAL*/
+section.documental{
+    margin: 10px 0;
+}
+/*----------------END--DOCUMENTAL*/
+section.up{
+    position: fixed;
+    top: 80%;
+    right: 0;
+}
+section.up img{
+    width: 50px;
+}
+/*------------------HACKATHON*/
+section.hackathon{
+    background: #FFFF00;
+}
+section.hackathon .container{
+    margin: 20px 0;
+}
+/*----------------END--HACKATHON*/
+/*------------------CONTACTO*/
+.elemento-form{
+    margin: 5px 0;
+}
+section.contacto form button{
+    margin-left: 15px;
+}
+/*----------------END--CONTACTO*/
+/*---------------------footer*/
+footer{
+    margin-top: 20px;
+    background: #4497A3;
+    padding: 10px;
+}
+footer p{
+    margin: 20px;
+    color: #fff;
+}
+footer span{
+    color: yellow;
+}
+/*----------------END--footer*/
+

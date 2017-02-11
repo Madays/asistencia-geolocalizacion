@@ -1,0 +1,19 @@
+@media screen and (max-width:768px){
+    .mobile-menu{
+        background: rgba(168, 160, 165,.6);
+    }
+    #main-navigation a{
+        color: #fff;
+        /*background: rgba(168, 160, 165,.6);*/
+    }   
+    #main-navigation ul{
+        color: #fff;        
+    }
+}
+@media screen and (min-width:769px){
+    #frase-uno{
+        font-size: 60px;}
+    .box-banner{
+        padding: 100px 0;        
+    }    
+}
